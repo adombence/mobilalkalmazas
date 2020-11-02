@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Broadcast</string>
+    <string name="tv_fullhalgato">füllhallgató</string>
+    <string name="allapot">állapot: ?</string>
+    <string name="tv_szamol">változások száma:</string>
+    <string name="kerdojel">kérdőjel</string>
+    <string name="bedugva">A füllhallgató be van dugva.</string>
+</resources>
