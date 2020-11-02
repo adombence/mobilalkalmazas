@@ -5,4 +5,5 @@
     <string name="tv_szamol">változások száma:</string>
     <string name="kerdojel">kérdőjel</string>
     <string name="bedugva">A füllhallgató be van dugva.</string>
+    <string name="nincsbedugva">A füllhalgató nincs bedugva</string>
 </resources>
