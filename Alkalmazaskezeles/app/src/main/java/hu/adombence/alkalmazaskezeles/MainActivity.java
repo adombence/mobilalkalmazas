@@ -114,7 +114,9 @@ public class MainActivity extends AppCompatActivity {
                 Document doc = db.parse(be);
                 NodeList nl = doc.getElementsByTagName("ember");
                 int szam = nl.getLength();
-                valasz.append("A találatok száma: " + szam);
+                /*talalat += szam + "\n";
+                valasz.append(talalat);*/
+
                 /*BufferedReader be= new BufferedReader(new InputStreamReader(con.getInputStream()));
                 String sor=null;
                 while((sor=be.readLine())!=null){
