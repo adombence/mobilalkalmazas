@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
 
     public class Lekerdezo extends AsyncTask<String, Void, String> {
 
-        String eredeti = null;
+        String eredeti = "";
 
         @Override
         protected void onPreExecute() {

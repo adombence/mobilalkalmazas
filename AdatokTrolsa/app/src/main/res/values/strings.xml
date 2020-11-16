@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AdatokTárolása</string>
+    <string name="tv_nev">Név</string>
+    <string name="btn_tarol">Tárolás</string>
+    <string name="tv_raw">RAW</string>
+    <string name="name">Name</string>
+</resources>
