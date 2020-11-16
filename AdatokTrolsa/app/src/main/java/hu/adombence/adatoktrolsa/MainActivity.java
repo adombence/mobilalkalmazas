@@ -5,11 +5,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.os.Environment;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -75,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
 
             FileOutputStream ki;
             ki = openFileOutput("kiirt.txt", Context.MODE_PRIVATE);
-            ki.write("Ez egy kiirandó szöveg".getBytes());
+            ki.write("Ez egy kiirandó szöveg\n".getBytes());
             ki.write("Ez egy másik sor".getBytes());
             ki.flush();
             ki.close();
@@ -98,6 +100,26 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
+        }
+
+        if (Environment.MEDIA_MOUNTED.equals(Environment.getExternalStorageState())) {
+            Toast.makeText(this, "Külső tároló mountolva van", Toast.LENGTH_SHORT).show();
+            File root = getExternalFilesDir(null);
+            //File root = Environment.getExternalStorageDirectory();
+            Log.d("sajat", "ROOT:" + root.getAbsolutePath());
+            File sajatkonyvtar = new File(root.getAbsolutePath() + "/sajatkonyvtar");
+            if (sajatkonyvtar.mkdir()) {
+                Log.d("sajat", "sikeresen létrehozva");
+            }
+
+            File[] allomyanok = root.listFiles();
+            StringBuilder sb = new StringBuilder();
+
+            for (File f : allomyanok) {
+                sb.append(f.getName() + "\n");
+            }
+            String eredeti = tv_tartalom.getText().toString();
+            tv_tartalom.setText(eredeti + "\n" + sb.toString());
         }
 
 
