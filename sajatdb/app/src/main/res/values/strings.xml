@@ -2,4 +2,7 @@
     <string name="app_name">sajatdb</string>
     <string name="tv_feltoltes">Adatbázis feltöltése</string>
     <string name="btn_tovabb">Tovább</string>
+    <string name="btn_keres">Keres</string>
+    <string name="editText_keresendo" />
+    <string name="tv_keres">Keresés</string>
 </resources>

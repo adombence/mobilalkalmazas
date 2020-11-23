@@ -32,5 +32,6 @@
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         android:gravity="center"
-        android:text="@string/btn_tovabb" />
+        android:text="@string/btn_tovabb"
+        android:visibility="invisible" />
 </LinearLayout>
