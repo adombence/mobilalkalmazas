@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">sajatdb</string>
+    <string name="tv_feltoltes">Adatbázis feltöltése</string>
+    <string name="btn_tovabb">Tovább</string>
 </resources>
