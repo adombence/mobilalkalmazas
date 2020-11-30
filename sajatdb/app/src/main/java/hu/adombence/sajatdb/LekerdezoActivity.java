@@ -62,9 +62,13 @@ public class LekerdezoActivity extends AppCompatActivity {
         et_keresendo = this.findViewById(R.id.editText_keresendo);
         listv = this.findViewById(R.id.listView_talalatok);
 
-        ArrayAdapter<Ember> adapter_lista = new ArrayAdapter<Ember>(this, R.layout.lista_elem, R.id.textView_lista_nev, lista);
+        /*ArrayAdapter<Ember> adapter_lista = new ArrayAdapter<Ember>(this, R.layout.lista_elem, R.id.textView_lista_nev, lista);
+        listv.setAdapter(adapter_lista);*/
+
+        SajatAdapter adapter_lista = new SajatAdapter(this, R.layout.lista_elem, lista);
         listv.setAdapter(adapter_lista);
 
+        
         listv.setOnItemClickListener((adapterView, view, i, l) ->
                 Toast.makeText(this, "Kiválaszott: " + lista.get(i).getNev(), Toast.LENGTH_SHORT).show());
 
