@@ -26,7 +26,8 @@
             android:layout_weight="1"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="@string/editText_keresendo" />
+            android:text="@string/editText_keresendo"
+            android:importantForAutofill="no" />
 
         <Button
             android:id="@+id/btn_keres"
@@ -37,6 +38,7 @@
     </LinearLayout>
 
     <ListView
+        android:id="@+id/listView_talalatok"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </LinearLayout>
