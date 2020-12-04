@@ -20,7 +20,8 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="@string/testtomeg_hint"
-        android:inputType="number" />
+        android:inputType="number"
+        android:importantForAutofill="no" />
 
     <EditText
         android:id="@+id/testmagassag"
@@ -28,7 +29,8 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="@string/testmagassag_hint"
-        android:inputType="number" />
+        android:inputType="number"
+        android:importantForAutofill="no" />
 
     <Button
         android:id="@+id/button"
@@ -41,5 +43,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/eredmeny"
-        android:textSize="50sp" />
+        android:textFontWeight="0"
+        android:textSize="40sp" />
 </LinearLayout>
