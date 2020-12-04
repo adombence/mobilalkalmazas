@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/cim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cim"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/testtomeg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/testtomeg_hint"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/testmagassag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/testmagassag_hint"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/szamol" />
+
+    <TextView
+        android:id="@+id/tv_eredmeny"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/eredmeny"
+        android:textSize="50sp" />
+</LinearLayout>
