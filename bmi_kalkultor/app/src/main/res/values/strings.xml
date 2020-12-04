@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">bmi_kalkulátor</string>
+    <string name="cim">BMI Kalkulátor</string>
+    <string name="testtomeg_hint">Testtömeg (kg)</string>
+    <string name="testmagassag_hint">Testmagasság (cm)</string>
+    <string name="eredmeny" />
+    <string name="szamol">számol</string>
+    <string name="sovany">: Sovány</string>
+    <string name="normal">: Normál testsúly</string>
+    <string name="tulsuly">: Túlsúly</string>
+    <string name="elhizas">: Elhízás</string>
+</resources>
