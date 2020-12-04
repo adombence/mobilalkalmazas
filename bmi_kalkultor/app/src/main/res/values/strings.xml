@@ -9,4 +9,11 @@
     <string name="normal">: Normál testsúly</string>
     <string name="tulsuly">: Túlsúly</string>
     <string name="elhizas">: Elhízás</string>
+    <string name="ferfi">Férfi</string>
+    <string name="no">Nő</string>
+    <string name="tv_kivanatos" />
+    <string name="tv_szelsoertekek" />
+    <string name="kivanatos">Kivánatos átlag: </string>
+    <string name="mertekegyseg_kg"> kg</string>
+    <string name="szelsoertek">Szélső értékek: </string>
 </resources>
