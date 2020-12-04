@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">bmi_kalkulátor</string>
+    <string name="cim">BMI Kalkulátor</string>
+    <string name="testtomeg_hint">Testtömeg (kg)</string>
+    <string name="testmagassag_hint">Testmagasság (cm)</string>
+    <string name="szamol">számol</string>
+</resources>
