@@ -5,4 +5,7 @@
     <string name="testtomeg_hint">Testtömeg (kg)</string>
     <string name="testmagassag_hint">Testmagasság (cm)</string>
     <string name="szamol">számol</string>
+    <string name="kivanatos">Kivánatos átlag: </string>
+    <string name="mertekegyseg_kg"> kg</string>
+    <string name="szelsoertek">Szélső értékek: </string>
 </resources>
