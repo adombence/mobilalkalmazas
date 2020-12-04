@@ -1,12 +1,12 @@
 package hu.adombence.bmi_kalkultor;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.annotation.SuppressLint;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     Button szamol;
     TextView tv_eredmeny;
 
+    @SuppressLint("DefaultLocale")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,25 +26,22 @@ public class MainActivity extends AppCompatActivity {
         szamol = this.findViewById(R.id.button);
         tv_eredmeny = this.findViewById(R.id.tv_eredmeny);
 
-        szamol.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                double tomeg = Double.parseDouble(testtomeg.getText().toString());
-                double magassag = Double.parseDouble(testmagassag.getText().toString());
-                double eredmeny = tomeg / ((magassag / 100) * (magassag / 100));
+        szamol.setOnClickListener(view -> {
+            double tomeg = Double.parseDouble(testtomeg.getText().toString());
+            double magassag = Double.parseDouble(testmagassag.getText().toString());
+            double eredmeny = tomeg / ((magassag / 100) * (magassag / 100));
 
-                String vissza = null;
-                if (eredmeny < 18.5) {
-                    vissza = String.format("%.1f", eredmeny) + getString(R.string.sovany);
-                } else if (eredmeny >= 18.5 && eredmeny < 25) {
-                    vissza = String.format("%.1f", eredmeny) + getString(R.string.normal);
-                } else if (eredmeny >= 25 && eredmeny < 30) {
-                    vissza = String.format("%.1f", eredmeny) + getString(R.string.tulsuly);
-                } else {
-                    vissza = String.format("%.1f", eredmeny) + getString(R.string.elhizas);
-                }
-                tv_eredmeny.setText(vissza);
+            String vissza;
+            if (eredmeny < 18.5) {
+                vissza = String.format("%.1f", eredmeny) + getString(R.string.sovany);
+            } else if (eredmeny >= 18.5 && eredmeny < 25) {
+                vissza = String.format("%.1f", eredmeny) + getString(R.string.normal);
+            } else if (eredmeny >= 25 && eredmeny < 30) {
+                vissza = String.format("%.1f", eredmeny) + getString(R.string.tulsuly);
+            } else {
+                vissza = String.format("%.1f", eredmeny) + getString(R.string.elhizas);
             }
+            tv_eredmeny.setText(vissza);
         });
     }
 }
