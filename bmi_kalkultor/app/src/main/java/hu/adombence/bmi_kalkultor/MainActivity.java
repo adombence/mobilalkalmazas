@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
             kivanatos = getString(R.string.kivanatos) + " " + String.format("%.1f", kivanatosAtlag) + getString(R.string.mertekegyseg_kg);
-            szelsoErtekek = getString(R.string.szelsoertek) + " " + String.format("%.1f", min) + getString(R.string.mertekegyseg_kg) + "-" + String.format("%.1f", max) + getString(R.string.mertekegyseg_kg);
+            szelsoErtekek = getString(R.string.szelsoertek) + " " + String.format("%.1f", min) + getString(R.string.mertekegyseg_kg) + " - " + String.format("%.1f", max) + getString(R.string.mertekegyseg_kg);
 
             tv_eredmeny.setText(vissza);
             tv_kivanatos.setText(kivanatos);
