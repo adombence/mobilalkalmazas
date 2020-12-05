@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Timer Notification</string>
+    <string name="startcount">Start Countdown</string>
+</resources>
