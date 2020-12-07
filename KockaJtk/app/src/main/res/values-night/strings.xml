@@ -14,5 +14,6 @@
     <string name="vesztettUzenet">Sajnos elfogyott a pénzed</string>
     <string name="ujra">Újra!</string>
     <string name="kilepes">Kilépés!</string>
-
+    <string name="valasz">Tippelj:</string>
+    <string name="nyert">Nyertél!</string>
 </resources>
