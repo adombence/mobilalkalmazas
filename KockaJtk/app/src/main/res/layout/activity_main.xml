@@ -106,9 +106,16 @@
 
     <ImageButton
         android:id="@+id/kocka"
-        android:layout_width="214dp"
-        android:layout_height="196dp"
+        android:layout_width="229dp"
+        android:layout_height="198dp"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
+        android:backgroundTint="#373737"
         app:srcCompat="@drawable/kocka1" />
+
+    <TextView
+        android:id="@+id/eredmeny"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" />
 </LinearLayout>
