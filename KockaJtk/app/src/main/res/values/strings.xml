@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Kocka Játék</string>
+    <string name="osszespenzed">Összes Pénz: </string>
+    <string name="tet">Tét: </string>
+    <string name="minertek">1</string>
+    <string name="maxertek">100</string>
+    <string name="rb1">Egy</string>
+    <string name="rb2">Kettő</string>
+    <string name="rb3">Három</string>
+    <string name="rb4">Négy</string>
+    <string name="rb5">Öt</string>
+    <string name="rb6">Hat</string>
+    <string name="vesztett">Vesztettél!</string>
+    <string name="vesztettUzenet">Sajnos elfogyott a pénzed</string>
+    <string name="ujra">Újra!</string>
+    <string name="kilepes">Kilépés!</string>
+
+</resources>
