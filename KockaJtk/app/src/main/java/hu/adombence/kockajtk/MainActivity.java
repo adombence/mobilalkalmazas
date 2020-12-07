@@ -1,10 +1,9 @@
 package hu.adombence.kockajtk;
 
+import android.annotation.SuppressLint;
 import android.content.DialogInterface;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
-import android.view.MotionEvent;
-import android.view.View;
 import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -22,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     TextView osszespenz;
     TextView maxpenz;
     TextView tetertek;
+    TextView eredmeny;
     SeekBar tetbar;
     ImageView kep;
     RadioButton gomb1;
@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
     RadioGroup gombCsoport;
 
 
+    @SuppressLint({"DefaultLocale", "UseCompatLoadingForDrawables"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,9 +42,10 @@ public class MainActivity extends AppCompatActivity {
         osszespenz = this.findViewById(R.id.textView_osszpenz);
         maxpenz = this.findViewById(R.id.textView_max);
         tetertek = this.findViewById(R.id.textView_tet);
+        eredmeny = this.findViewById(R.id.eredmeny);
 
-        osszespenz.setText(getString(R.string.osszespenzed) + " " + penz);
-        tetertek.setText(getString(R.string.tet) + " " + 1);
+        osszespenz.setText(String.format("%s %d", getString(R.string.osszespenzed), penz));
+        tetertek.setText(String.format("%s %d", getString(R.string.tet), 1));
 
 
         tetbar = this.findViewById(R.id.seekBar);
@@ -67,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
                 tet = i;
-                tetertek.setText(getString(R.string.tet) + " " + tet);
+                tetertek.setText(String.format("%s %d", getString(R.string.tet), tet));
             }
 
             @Override
@@ -86,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
             int veletlen = 1;
 
 
-            int seged = gombCsoport.getAutofillType();
+            int seged = gombCsoport.getCheckedRadioButtonId();
 
             if (seged == gomb1.getId()) {
                 tipp = 1;
@@ -105,62 +107,48 @@ public class MainActivity extends AppCompatActivity {
 
             AnimationDrawable veletlenanim = new AnimationDrawable();
             veletlenanim.setOneShot(true);
-            for (int i = 1; i < 11; i++) {
-                int vsz = (int) (Math.random() * 6) + 1;
-                switch (vsz) {
+            for (int i = 1; i < 5; i++) {
+                veletlen = (int) (Math.random() * 6) + 1;
+                switch (veletlen) {
                     case 1:
-                        veletlenanim.addFrame(getResources().getDrawable(R.drawable.kocka1), 5000);
+                        veletlenanim.addFrame(getResources().getDrawable(R.drawable.kocka1), 100);
+                        eredmeny.setText(getString(R.string.rb1));
                         break;
                     case 2:
-                        veletlenanim.addFrame(getResources().getDrawable(R.drawable.kocka2), 5000);
+                        veletlenanim.addFrame(getResources().getDrawable(R.drawable.kocka2), 100);
+                        eredmeny.setText(getString(R.string.rb2));
                         break;
                     case 3:
-                        veletlenanim.addFrame(getResources().getDrawable(R.drawable.kocka3), 5000);
+                        veletlenanim.addFrame(getResources().getDrawable(R.drawable.kocka3), 100);
+                        eredmeny.setText(getString(R.string.rb3));
                         break;
                     case 4:
-                        veletlenanim.addFrame(getResources().getDrawable(R.drawable.kocka4), 5000);
+                        veletlenanim.addFrame(getResources().getDrawable(R.drawable.kocka4), 100);
+                        eredmeny.setText(getString(R.string.rb4));
                         break;
                     case 5:
-                        veletlenanim.addFrame(getResources().getDrawable(R.drawable.kocka5), 5000);
+                        veletlenanim.addFrame(getResources().getDrawable(R.drawable.kocka5), 100);
+                        eredmeny.setText(getString(R.string.rb5));
                         break;
                     case 6:
-                        veletlenanim.addFrame(getResources().getDrawable(R.drawable.kocka6), 5000);
+                        veletlenanim.addFrame(getResources().getDrawable(R.drawable.kocka6), 100);
+                        eredmeny.setText(getString(R.string.rb6));
                         break;
                 }
             }
 
-            kep.setImageResource(veletlenanim);
+
+            kep.setImageDrawable(veletlenanim);
             veletlenanim.setVisible(true, true);
             veletlenanim.start();
 
-            switch (veletlen) {
-                case 1:
-                    kep.setImageResource(R.drawable.kocka1);
-                    break;
-                case 2:
-                    kep.setImageResource(R.drawable.kocka2);
-                    break;
-                case 3:
-                    kep.setImageResource(R.drawable.kocka3);
-                    break;
-                case 4:
-                    kep.setImageResource(R.drawable.kocka4);
-                    break;
-                case 5:
-                    kep.setImageResource(R.drawable.kocka5);
-                    break;
-                case 6:
-                    kep.setImageResource(R.drawable.kocka6);
-                    break;
-
-            }
 
             if (tipp == veletlen) {
                 penz += (tet * 2);
-                osszespenz.setText(R.string.osszespenzed + " " + penz);
+                osszespenz.setText(String.format("%d %d", R.string.osszespenzed, penz));
             } else {
                 penz -= tet;
-                osszespenz.setText(R.string.osszespenzed + " " + penz);
+                osszespenz.setText(String.format("%d %d", R.string.osszespenzed, penz));
             }
 
             if (penz == 0) {
@@ -173,7 +161,7 @@ public class MainActivity extends AppCompatActivity {
                         penz = 100;
                         tet = 1;
                         tetbar.setMax(penz);
-                        osszespenz.setText(getString(R.string.osszespenzed) + " " + penz);
+                        osszespenz.setText(String.format("%s %d", getString(R.string.osszespenzed), penz));
                     }
                 });
                 figyelmeztetes.setNegativeButton(getString(R.string.kilepes), new DialogInterface.OnClickListener() {
@@ -188,7 +176,7 @@ public class MainActivity extends AppCompatActivity {
 
             osszespenz.setText(getString(R.string.osszespenzed) + " " + penz);
             tetbar.setMax(penz);
-            maxpenz.setText(" " + penz);
+            maxpenz.setText("" + penz);
 
         });
 
