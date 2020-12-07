@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     TextView maxpenz;
     TextView tetertek;
     TextView eredmeny;
+    TextView allapot;
     SeekBar tetbar;
     ImageView kep;
     RadioButton gomb1;
@@ -43,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
         maxpenz = this.findViewById(R.id.textView_max);
         tetertek = this.findViewById(R.id.textView_tet);
         eredmeny = this.findViewById(R.id.eredmeny);
+        allapot = this.findViewById(R.id.allapot);
 
         osszespenz.setText(String.format("%s %d", getString(R.string.osszespenzed), penz));
         tetertek.setText(String.format("%s %d", getString(R.string.tet), 1));
@@ -146,9 +148,11 @@ public class MainActivity extends AppCompatActivity {
             if (tipp == veletlen) {
                 penz += (tet * 2);
                 osszespenz.setText(String.format("%d %d", R.string.osszespenzed, penz));
+                allapot.setText(getString(R.string.nyert));
             } else {
                 penz -= tet;
                 osszespenz.setText(String.format("%d %d", R.string.osszespenzed, penz));
+                allapot.setText(getString(R.string.vesztett));
             }
 
             if (penz == 0) {
