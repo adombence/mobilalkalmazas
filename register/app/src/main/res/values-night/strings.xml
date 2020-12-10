@@ -3,4 +3,6 @@
     <string name="udvozol">Üdvözöljük!</string>
     <string name="belepes">Belépés</string>
     <string name="regisztacio">Regisztráció</string>
+    <string name="welcome">Welcome</string>
+    <string name="email">Email</string>
 </resources>
