@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">register</string>
-    <string name="udvozol">Üdvözöljük</string>
+    <string name="udvozol">Üdvözöljük!</string>
+    <string name="belepes">Belépés</string>
+    <string name="regisztacio">Regisztráció</string>
 </resources>
