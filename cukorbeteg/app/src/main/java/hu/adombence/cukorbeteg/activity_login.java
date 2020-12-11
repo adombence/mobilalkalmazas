@@ -46,12 +46,12 @@ public class activity_login extends AppCompatActivity {
         final String password = editTextPassword.getText().toString();
         //validating inputs
         if (TextUtils.isEmpty(username)) {
-            editTextUsername.setError("Please enter username");
+            editTextUsername.setError(getString(R.string.PleaseEnterUsername));
             editTextUsername.requestFocus();
             return;
         }
         if (TextUtils.isEmpty(password)) {
-            editTextPassword.setError("Please enter password");
+            editTextPassword.setError(getString(R.string.PleaseEnterPassword));
             editTextPassword.requestFocus();
             return;
         }
