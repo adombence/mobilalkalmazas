@@ -32,20 +32,12 @@ public class activity_login extends AppCompatActivity {
         editTextUsername = findViewById(R.id.editTextUsername);
         editTextPassword = findViewById(R.id.editTextPassword);
         //if user presses on login calling the method login
-        findViewById(R.id.buttonLogin).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                userLogin();
-            }
-        });
+        findViewById(R.id.buttonLogin).setOnClickListener(view -> userLogin());
         //if user presses on not registered
-        findViewById(R.id.textViewRegister).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                //open register screen
-                startActivity(new Intent(getApplicationContext(), activity_login.class));
-                finish();
-            }
+        findViewById(R.id.textViewRegister).setOnClickListener(view -> {
+            //open register screen
+            startActivity(new Intent(getApplicationContext(), activity_login.class));
+            finish();
         });
     }
 
