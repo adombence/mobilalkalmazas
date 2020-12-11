@@ -1,8 +1,9 @@
 package hu.adombence.interneteslogin;
 
 public class User {
-    private String username, email;
-    private int id;
+    private final String username;
+    private final String email;
+    private final int id;
 
     public User(int id, String username, String email) {
         this.id = id;
