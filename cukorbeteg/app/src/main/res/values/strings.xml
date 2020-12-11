@@ -1,4 +1,14 @@
 <resources>
     <string name="app_name">cukorbeteg</string>
     <string name="String_vercukorszint">Vércukorszint</string>
+    <string name="PleaseEnterUsername">Kérem töltse ki a felhasználónév mezőt</string>
+    <string name="PleaseEnterPassword">Kérem töltse ki a jelszó mezőt</string>
+    <string name="NemFerfi">Férfi</string>
+    <string name="NemNo">Nő</string>
+    <string name="tvNem">Nem</string>
+    <string name="tvKor">Születési dátum</string>
+    <string name="tvWeight">Súly</string>
+    <string name="kesz">Kész</string>
+    <string name="tvHeight">Magasság</string>
+    <string name="commited">Commited!</string>
 </resources>
