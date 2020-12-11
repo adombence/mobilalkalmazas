@@ -24,26 +24,11 @@ public class MainActivity extends AppCompatActivity {
         if (prefManager.isLoggedIn()) {
             login.setVisibility(View.GONE);
             sign_up.setVisibility(View.GONE);
-            profile.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    startActivity(new Intent(MainActivity.this, activity_profile.class));
-                }
-            });
+            profile.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, activity_profile.class)));
         } else {
             profile.setVisibility(View.GONE);
-            login.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    startActivity(new Intent(MainActivity.this, activity_login.class));
-                }
-            });
-            sign_up.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    startActivity(new Intent(MainActivity.this, activity_signup.class));
-                }
-            });
+            login.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, activity_login.class)));
+            sign_up.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, activity_signup.class)));
         }
     }
 }
