@@ -133,7 +133,7 @@ public class activity_signup extends AppCompatActivity {
                     finish();
                     startActivity(new Intent(getApplicationContext(), activity_profile.class));
                 } else {
-                    Toast.makeText(getApplicationContext(), getString(R.id.valamiHibaTortent), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), getString(R.string.valamiHibaTortent), Toast.LENGTH_SHORT).show();
                 }
             } catch (JSONException e) {
                 e.printStackTrace();
