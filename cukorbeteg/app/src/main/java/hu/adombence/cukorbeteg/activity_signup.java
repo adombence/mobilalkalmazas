@@ -46,12 +46,12 @@ public class activity_signup extends AppCompatActivity {
 
         //validations
         if (TextUtils.isEmpty(username)) {
-            editTextUsername.setError("Please enter username");
+            editTextUsername.setError(getString(R.string.PleaseEnterUsername));
             editTextUsername.requestFocus();
             return;
         }
         if (TextUtils.isEmpty(email)) {
-            editTextEmail.setError("Please enter your email");
+            editTextEmail.setError(getString(R.string.PleaseEnterPassword));
             editTextEmail.requestFocus();
             return;
         }
@@ -133,7 +133,7 @@ public class activity_signup extends AppCompatActivity {
                     finish();
                     startActivity(new Intent(getApplicationContext(), activity_profile.class));
                 } else {
-                    Toast.makeText(getApplicationContext(), "Some error occurred", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), getString(R.id.valamiHibaTortent), Toast.LENGTH_SHORT).show();
                 }
             } catch (JSONException e) {
                 e.printStackTrace();
