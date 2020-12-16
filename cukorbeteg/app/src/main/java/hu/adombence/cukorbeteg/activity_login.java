@@ -85,17 +85,17 @@ public class activity_login extends AppCompatActivity {
                 JSONObject obj = new JSONObject(s);
 
                 //if no error in response
-                if (!obj.getBoolean("error")) {
-                    Toast.makeText(getApplicationContext(), obj.getString("message"), Toast.LENGTH_SHORT).show();
+                if (!obj.getBoolean(getString(R.string.error))) {
+                    Toast.makeText(getApplicationContext(), obj.getString(getString(R.string.message)), Toast.LENGTH_SHORT).show();
 
                     //getting the user from the response
-                    JSONObject userJson = obj.getJSONObject("user");
+                    JSONObject userJson = obj.getJSONObject(getString(R.string.user));
 
                     //creating a new user object
                     User user = new User(
-                            userJson.getInt("id"),
-                            userJson.getString("username"),
-                            userJson.getString("email")
+                            userJson.getInt(getString(R.string.id)),
+                            userJson.getString(getString(R.string.username)),
+                            userJson.getString(getString(R.string.email))
                     );
 
                     //storing the user in shared preferences
@@ -105,7 +105,7 @@ public class activity_login extends AppCompatActivity {
                     finish();
                     startActivity(new Intent(getApplicationContext(), activity_profile.class));
                 } else {
-                    Toast.makeText(getApplicationContext(), "Invalid username or password", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), R.string.invalidUserOrPass, Toast.LENGTH_SHORT).show();
                 }
             } catch (JSONException e) {
                 e.printStackTrace();
@@ -119,8 +119,8 @@ public class activity_login extends AppCompatActivity {
 
             //creating request parameters
             HashMap<String, String> params = new HashMap<>();
-            params.put("username", username);
-            params.put("password", password);
+            params.put(getString(R.string.username), username);
+            params.put(getString(R.string.password), password);
 
             //returing the response
             return requestHandler.sendPostRequest(URLS.URL_LOGIN, params);
