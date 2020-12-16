@@ -10,4 +10,12 @@
     <string name="kesz">Kész</string>
     <string name="tvHeight">Magasság</string>
     <string name="commited">Commited!</string>
+    <string name="invalidUserOrPass">Invalid username or password</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="email">email</string>
+    <string name="id">id</string>
+    <string name="user">user</string>
+    <string name="message">message</string>
+    <string name="valamiHibaTortent">Valami hiba történt...</string>
 </resources>
