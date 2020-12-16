@@ -17,5 +17,5 @@
     <string name="id">id</string>
     <string name="user">user</string>
     <string name="message">message</string>
-    <string name="valamiHibaTortent">Valami hiba történt...</string>
+    <string name="valamiHibaTortent">Valami hiba történt</string>
 </resources>
