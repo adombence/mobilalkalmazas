@@ -10,7 +10,7 @@
             $age = $_POST['age'];
             $weight = $_POST['weight'];
             $height = $_POST['height'];
-            
+            //TODO
             $stmt = $conn->prepare("SELECT id FROM users WHERE username = ? OR email = ?");
             $stmt->bind_param("ss", $username, $email);
             $stmt->execute();
