@@ -13,16 +13,6 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.android.volley.Request;
-import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.JsonObjectRequest;
-import com.android.volley.toolbox.Volley;
-
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import java.util.HashMap;
 
 public class activity_phisicalDatas extends AppCompatActivity {
@@ -107,8 +97,8 @@ public class activity_phisicalDatas extends AppCompatActivity {
             Toast.makeText(activity_phisicalDatas.this, getString(R.string.commited), Toast.LENGTH_SHORT).show();
 
             //executing the async task
-            activity_phisicalDatas.userDatas ru = new userDatas(Integer.parseInt(userId), gNem, gKor, gTomeg);
-            ru.execute();
+            activity_phisicalDatas.userDatas ud = new userDatas(Integer.parseInt(userId), gNem, gKor, gTomeg, gMagassag);
+            ud.execute();
         });
     }
 
@@ -168,13 +158,14 @@ public class activity_phisicalDatas extends AppCompatActivity {
 
         private int id;
         private boolean gender;
-        private double age, weight;
+        private double age, weight, height;
 
-        public userDatas(int id, boolean gender, int age, double weight) {
+        public userDatas(int id, boolean gender, int age, double weight, double height) {
             this.id = id;
             this.gender = gender;
             this.age = age;
             this.weight = weight;
+            this.height = height;
         }
 
         protected String doInBackground(Void... voids) {
@@ -194,6 +185,7 @@ public class activity_phisicalDatas extends AppCompatActivity {
             params.put(GENDER, String.valueOf(i));
             params.put(AGE, String.valueOf(age));
             params.put(WEIGHT, String.valueOf(weight));
+            params.put(HEIGHT, String.valueOf(height));
 
             Log.d("HASHTERKEP", String.valueOf(params));
             //returing the response
