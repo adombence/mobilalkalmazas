@@ -2,59 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d93c60c-f26c-419a-956d-dbfebe51dc08" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../POSTdata/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POSTdata/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POSTdata/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POSTdata/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POSTdata/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POSTdata/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POSTdata/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POSTdata/app/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POSTdata/app/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POSTdata/app/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POSTdata/app/src/androidTest/java/hu/adombence/postdata/ExampleInstrumentedTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POSTdata/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POSTdata/app/src/main/java/hu/adombence/postdata/MainActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POSTdata/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POSTdata/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POSTdata/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POSTdata/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POSTdata/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POSTdata/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POSTdata/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POSTdata/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POSTdata/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POSTdata/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POSTdata/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POSTdata/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POSTdata/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POSTdata/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POSTdata/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POSTdata/app/src/main/res/values-night/dimens.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POSTdata/app/src/main/res/values-night/themes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POSTdata/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POSTdata/app/src/main/res/values/dimens.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POSTdata/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POSTdata/app/src/main/res/values/themes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POSTdata/app/src/test/java/hu/adombence/postdata/ExampleUnitTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POSTdata/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POSTdata/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POSTdata/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POSTdata/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POSTdata/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POSTdata/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../POSTdata/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cukorbeteg/app/src/main/java/hu/adombence/cukorbeteg/DownloadFilesTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/serverside.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cukorbeteg/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../cukorbeteg/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cukorbeteg/app/src/main/java/hu/adombence/cukorbeteg/RequestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../cukorbeteg/app/src/main/java/hu/adombence/cukorbeteg/RequestHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cukorbeteg/app/src/main/java/hu/adombence/cukorbeteg/URLS.java" beforeDir="false" afterPath="$PROJECT_DIR$/../cukorbeteg/app/src/main/java/hu/adombence/cukorbeteg/URLS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cukorbeteg/app/src/main/java/hu/adombence/cukorbeteg/activity_phisicalDatas.java" beforeDir="false" afterPath="$PROJECT_DIR$/../cukorbeteg/app/src/main/java/hu/adombence/cukorbeteg/activity_phisicalDatas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cukorbeteg/app/src/main/res/values-night/ids.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cukorbeteg/app/src/main/res/values/ids.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datas.php" beforeDir="false" afterPath="$PROJECT_DIR$/datas.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/get_data.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/get_values.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/values.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vercukorteszt/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asd" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,6 +48,8 @@
       <workItem from="1608485366174" duration="5812000" />
       <workItem from="1608741658829" duration="1350000" />
       <workItem from="1608909769998" duration="159000" />
+      <workItem from="1609076099871" duration="2958000" />
+      <workItem from="1609155259222" duration="1523000" />
     </task>
     <servers />
   </component>
