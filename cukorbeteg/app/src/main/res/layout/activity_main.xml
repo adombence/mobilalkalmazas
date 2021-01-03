@@ -7,38 +7,59 @@
     tools:context=".MainActivity">
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Profile"
         android:id="@+id/btnProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"/>
+        android:layout_marginBottom="20dp"
+        android:text="Profile" />
+
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="LogIn"
         android:id="@+id/btn_login"
-        android:layout_below="@+id/btnProfile"/>
-    <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="SignUp"
+        android:layout_below="@+id/btnProfile"
+        android:text="LogIn" />
+
+    <Button
         android:id="@+id/btn_sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/btn_login"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="20dp"
+        android:text="SignUp" />
+
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Főoldal"
         android:id="@+id/fooldal"
-        android:layout_below="@+id/btn_sign_up"
-        android:layout_marginTop="20dp"/>
-    <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="adatok"
-        android:id="@+id/adatok"
+        android:layout_below="@+id/btn_sign_up"
+        android:layout_marginTop="20dp"
+        android:text="Főoldal" />
+
+    <Button
+        android:id="@+id/vercukor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/fooldal"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="20dp"
+        android:text="vércukor" />
+
+    <Button
+        android:id="@+id/adatok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vercukor"
+        android:layout_marginTop="20dp"
+        android:text="adatok" />
+
+    <Button
+        android:id="@+id/receptek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/adatok"
+        android:layout_marginTop="20dp"
+        android:text="receptek" />
+
 
 </RelativeLayout>

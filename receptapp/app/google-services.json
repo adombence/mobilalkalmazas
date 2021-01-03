@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "44357018267",
+    "project_id": "receptapp-7131c",
+    "storage_bucket": "receptapp-7131c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:44357018267:android:de343fe27e36bd170adc3e",
+        "android_client_info": {
+          "package_name": "hu.adombence.receptapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "44357018267-umf85irfenmt0q4irbuar6rfj59oph8s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWvB59GezT6clTD2OyjarZ8YPs8O3WfWw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "44357018267-umf85irfenmt0q4irbuar6rfj59oph8s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">cukorbeteg</string>
+    <string name="String_vercukorszint">Vércukorszint</string>
+    <string name="PleaseEnterUsername">Kérem töltse ki a felhasználónév mezőt</string>
+    <string name="PleaseEnterPassword">Kérem töltse ki a jelszó mezőt</string>
+    <string name="NemFerfi">Férfi</string>
+    <string name="NemNo">Nő</string>
+    <string name="tvNem">Nem</string>
+    <string name="tvKor">Születési dátum</string>
+    <string name="tvWeight">Súly</string>
+    <string name="kesz">Kész</string>
+    <string name="tvHeight">Magasság</string>
+    <string name="commited">Commited!</string>
+    <string name="invalidUserOrPass">Invalid username or password</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="email">email</string>
+    <string name="id">id</string>
+    <string name="user">user</string>
+    <string name="error">error</string>
+    <string name="message">message</string>
+    <string name="valamiHibaTortent">Valami hiba történt</string>
+</resources>

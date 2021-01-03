@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">timednotification</string>
+    <string name="createevent">Create Event</string>
+</resources>

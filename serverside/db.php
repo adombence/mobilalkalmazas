@@ -3,13 +3,26 @@ $host = "mysql.omega:3306";   //Host
 $username = "cukorbeteg";    //User
 $password = "Q2BfC4Udu97RMZg"; //Passsword
 $database = "cukorbeteg";     // Database Name
- 
-//creating a new connection object using mysqli 
+
+/* creating a new connection object using mysqli */
 $conn = new mysqli($host, $username, $password, $database);
- 
-//if there is some error connecting to the database
-//with die we will stop the further execution by displaying a message causing the error.
-if ($conn->connect_error) {
-    die("Database connection failed: " . $conn->connect_error);
+/* check connection */
+if (mysqli_connect_errno()) {
+    printf("Connect failed: %s\n", mysqli_connect_error());
+    exit();
 }
+
+//printf("Initial character set: %s\n", $conn->character_set_name());
+
+/* change character set to utf8mb4 */
+if (!$conn->set_charset("utf8mb4")) {
+    printf("Error loading character set utf8mb4: %s\n", $conn->error);
+    exit();
+} else {
+    //printf("Current character set: %s\n", $conn->character_set_name());
+}
+
+//$conn->close();
+
+
 ?>

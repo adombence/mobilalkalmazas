@@ -12,5 +12,8 @@
     <color name="red">#C50E29</color>
     <color name="gray">#8E8E8E</color>
     <color name="gray_dark">#616161</color>
+    <color name="green">#FF4CAF50</color>
+    <color name="orange">#ff9800</color>
+    <color name="deeporange">#ff5722</color>
 
 </resources>

@@ -1,7 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3d93c60c-f26c-419a-956d-dbfebe51dc08" name="Default Changelist" comment="" />
+    <list default="true" id="3d93c60c-f26c-419a-956d-dbfebe51dc08" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../ReminderTest/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ReminderTest/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ReminderTest/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ReminderTest/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ReminderTest/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ReminderTest/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../alarmteszt/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../alarmteszt/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../alarmteszt/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../alarmteszt/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../alarmteszt/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../alarmteszt/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../alarmteszt/app/src/main/java/hu/adombence/alarmteszt/broadcast/MyBroadcastReceiver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../alarmteszt/app/src/main/res/values-night/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../receptapp/app/src/main/java/hu/adombence/receptapp/DetailActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../receptapp/app/src/main/java/hu/adombence/receptapp/FoodData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../receptapp/app/src/main/java/hu/adombence/receptapp/Upload_Recipe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../receptapp/app/src/main/java/hu/adombence/receptapp/myAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../receptapp/app/src/main/res/drawable/ic_baseline_add_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../receptapp/app/src/main/res/drawable/index.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../receptapp/app/src/main/res/drawable/tomato_soup.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../receptapp/app/src/main/res/layout/activity_detail.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../receptapp/app/src/main/res/layout/activity_upload__recipe.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../receptapp/app/src/main/res/layout/recycler_row_item.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../repeatingnotification/app/src/main/java/hu/adombence/repeatingnotification/Adapter/EventAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../repeatingnotification/app/src/main/java/hu/adombence/repeatingnotification/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../repeatingnotification/app/src/main/java/hu/adombence/repeatingnotification/Database/DatabaseClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/get_recipes.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/teszt.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../timednotification/app/src/main/java/hu/adombence/timednotification/CreateEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../timednotification/app/src/main/res/layout/activity_create_event.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../timednotification/app/src/main/res/layout/notification_layout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../timednotification/app/src/main/res/values-night/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../timednotification/app/src/main/res/values-night/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notificationtest/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../notificationtest/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.php" beforeDir="false" afterPath="$PROJECT_DIR$/db.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,6 +81,9 @@
       <workItem from="1608909769998" duration="159000" />
       <workItem from="1609076099871" duration="2958000" />
       <workItem from="1609155259222" duration="2247000" />
+      <workItem from="1609528981896" duration="2541000" />
+      <workItem from="1609686799974" duration="825000" />
+      <workItem from="1609688787119" duration="2047000" />
     </task>
     <servers />
   </component>

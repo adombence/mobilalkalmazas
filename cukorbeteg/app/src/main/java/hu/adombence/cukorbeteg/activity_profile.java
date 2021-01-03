@@ -4,16 +4,21 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 public class activity_profile extends AppCompatActivity {
 
     TextView textViewId, textViewUsername, textViewEmail, textViewGender;
     Button buttonFooldal;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
+        buttonFooldal = this.findViewById(R.id.buttonFooldal);
+
+        buttonFooldal.setOnClickListener(view -> startActivity(new Intent(activity_profile.this, MainActivity.class)));
 
         init();
 
@@ -37,6 +42,5 @@ public class activity_profile extends AppCompatActivity {
             finish();
             PrefManager.getInstance(getApplicationContext()).logout();
         });
-
     }
 }

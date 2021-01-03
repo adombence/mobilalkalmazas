@@ -1,7 +1,10 @@
 package hu.adombence.cukorbeteg;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
@@ -9,6 +12,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -40,11 +44,13 @@ public class activity_phisicalDatas extends AppCompatActivity {
     float gTomeg;
     float gMagassag;
     int gKor;
-    double bmi;
-    double kivanatosAtlag;
-    double min;
-    double max;
+    public double bmi;
+    public double kivanatosAtlag;
+    public double min;
+    public double max;
     Boolean gNem;
+
+    TextView tv_bmi_result, tv_bmi_result_txt, tv_kivanatos_atl, tv_szelsoertek;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,6 +64,11 @@ public class activity_phisicalDatas extends AppCompatActivity {
         et_suly = this.findViewById(R.id.et_suly);
         et_magassag = this.findViewById(R.id.et_magassag);
         buttonKesz = this.findViewById(R.id.buttonKesz);
+
+        tv_bmi_result = this.findViewById(R.id.tv_bmi_result);
+        tv_bmi_result_txt = this.findViewById(R.id.tv_bmi_result_txt);
+        tv_kivanatos_atl = this.findViewById(R.id.tv_kivanatos_atl);
+        tv_szelsoertek = this.findViewById(R.id.tv_szelsoertek);
 
         SharedPreferences sharedPreferences = getSharedPreferences(DATAS, Context.MODE_PRIVATE);
 
@@ -94,6 +105,12 @@ public class activity_phisicalDatas extends AppCompatActivity {
 
             editor.apply();
 
+            tv_bmi_result.setText(String.valueOf(result(bmi)));
+            resultColor(bmi);
+            tv_bmi_result_txt.setText(resultText(bmi));
+            tv_kivanatos_atl.setText(String.format("%.1f", kivanatosAtlag));
+            tv_szelsoertek.setText(String.format("%.1f", min) + " kg - " + String.format("%.1f", max) + " kg");
+
             Toast.makeText(activity_phisicalDatas.this, getString(R.string.commited), Toast.LENGTH_SHORT).show();
 
             //executing the async task
@@ -102,11 +119,50 @@ public class activity_phisicalDatas extends AppCompatActivity {
         });
     }
 
+    @SuppressLint("ResourceAsColor")
+    private void resultColor(double bmi) {
+        if (bmi < 18.5) {
+            tv_bmi_result.setTextColor(Color.parseColor("#FF4CAF50"));
+        } else if (bmi >= 18.5 && bmi < 25) {
+            tv_bmi_result.setTextColor(Color.parseColor("#ff9800"));
+        } else if (bmi >= 25 && bmi < 30) {
+            tv_bmi_result.setTextColor(Color.parseColor("#ff5722"));
+        } else {
+            tv_bmi_result.setTextColor(Color.parseColor("#C50E29"));
+        }
+    }
+
+    private String result(double bmi) {
+        String vissza;
+        if (bmi < 18.5) {
+            vissza = String.format("%.1f", bmi);
+        } else if (bmi >= 18.5 && bmi < 25) {
+            vissza = String.format("%.1f", bmi);
+        } else if (bmi >= 25 && bmi < 30) {
+            vissza = String.format("%.1f", bmi);
+        } else {
+            vissza = String.format("%.1f", bmi);
+        }
+        return vissza;
+    }
+
+    private String resultText(double bmi) {
+        String vissza;
+        if (bmi < 18.5) {
+            vissza = getString(R.string.sovany);
+        } else if (bmi >= 18.5 && bmi < 25) {
+            vissza = getString(R.string.normal);
+        } else if (bmi >= 25 && bmi < 30) {
+            vissza = getString(R.string.tulsuly);
+        } else {
+            vissza = getString(R.string.elhizas);
+        }
+        return vissza;
+    }
+
     Boolean isChecked() {
         boolean ret = false;
-        if (ferfi.isChecked()) {
-            ret = false;
-        } else if (no.isChecked()) {
+        if (no.isChecked()) {
             ret = true;
         }
         return ret;
@@ -154,11 +210,13 @@ public class activity_phisicalDatas extends AppCompatActivity {
         userId = String.valueOf(user.getId());
     }
 
-    class userDatas extends AsyncTask<Void, Void, String> {
+    static class userDatas extends AsyncTask<Void, Void, String> {
 
-        private int id;
-        private boolean gender;
-        private double age, weight, height;
+        private final int id;
+        private final boolean gender;
+        private final double age;
+        private final double weight;
+        private final double height;
 
         public userDatas(int id, boolean gender, int age, double weight, double height) {
             this.id = id;

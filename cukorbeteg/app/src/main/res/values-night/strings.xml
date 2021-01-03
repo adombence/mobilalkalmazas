@@ -18,4 +18,21 @@
     <string name="user">user</string>
     <string name="message">message</string>
     <string name="valamiHibaTortent">Valami hiba történt</string>
+    <string name="cim">BMI Kalkulátor</string>
+    <string name="testtomeg_hint">Testtömeg (kg)</string>
+    <string name="testmagassag_hint">Testmagasság (cm)</string>
+    <string name="eredmeny" />
+    <string name="szamol">számol</string>
+    <string name="sovany">Sovány</string>
+    <string name="normal">Normál testsúly</string>
+    <string name="tulsuly">Túlsúly</string>
+    <string name="elhizas">Elhízás</string>
+    <string name="ferfi">Férfi</string>
+    <string name="no">Nő</string>
+    <string name="tv_kivanatos" />
+    <string name="tv_szelsoertekek" />
+    <string name="kivanatos">Kivánatos átlag: </string>
+    <string name="mertekegyseg_kg"> kg</string>
+    <string name="szelsoertek">Szélső értékek: </string>
+    <string name="kivanatosatlag">Kivánatos átlag:</string>
 </resources>
