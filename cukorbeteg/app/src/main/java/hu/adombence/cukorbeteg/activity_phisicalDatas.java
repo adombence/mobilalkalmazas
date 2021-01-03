@@ -50,7 +50,7 @@ public class activity_phisicalDatas extends AppCompatActivity {
     public double max;
     Boolean gNem;
 
-    TextView tv_bmi_result, tv_bmi_result_txt, tv_kivanatos_atl, tv_szelsoertek;
+    TextView tv_bmi_result, tv_bmi_result_txt, tv_kivanatos_atl, tv_szelsoertek, kivanatosaltag, szelsoretek;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,6 +69,9 @@ public class activity_phisicalDatas extends AppCompatActivity {
         tv_bmi_result_txt = this.findViewById(R.id.tv_bmi_result_txt);
         tv_kivanatos_atl = this.findViewById(R.id.tv_kivanatos_atl);
         tv_szelsoertek = this.findViewById(R.id.tv_szelsoertek);
+
+        szelsoretek = this.findViewById(R.id.szelsoertek);
+        kivanatosaltag = this.findViewById(R.id.kivanatosatlag);
 
         SharedPreferences sharedPreferences = getSharedPreferences(DATAS, Context.MODE_PRIVATE);
 
@@ -110,7 +113,8 @@ public class activity_phisicalDatas extends AppCompatActivity {
             tv_bmi_result_txt.setText(resultText(bmi));
             tv_kivanatos_atl.setText(String.format("%.1f", kivanatosAtlag));
             tv_szelsoertek.setText(String.format("%.1f", min) + " kg - " + String.format("%.1f", max) + " kg");
-
+            kivanatosaltag.setText(R.string.kivanatosatlag);
+            szelsoretek.setText(R.string.szelsoertek);
             Toast.makeText(activity_phisicalDatas.this, getString(R.string.commited), Toast.LENGTH_SHORT).show();
 
             //executing the async task

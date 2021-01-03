@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
             foodlal.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, MainActivity1.class)));
             adatok.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, activity_phisicalDatas.class)));
             vercukor.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, activity_cukor.class)));
-            receptek.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, activity_recept.class)));
+            receptek.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, hu.adombence.cukorbeteg.recept.activity_recept.class)));
         } else {
             profile.setVisibility(View.GONE);
             foodlal.setVisibility(View.GONE);

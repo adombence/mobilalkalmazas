@@ -11,7 +11,8 @@
         android:roundIcon="@drawable/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Cukorbeteg">
-        <activity android:name=".activity_recept"></activity>
+        <activity android:name=".recept.DetailActivity"></activity>
+        <activity android:name=".recept.activity_recept" />
         <activity android:name=".activity_cukor" />
         <activity android:name=".CukorActivity" />
         <activity android:name=".activity_phisicalDatas" />
