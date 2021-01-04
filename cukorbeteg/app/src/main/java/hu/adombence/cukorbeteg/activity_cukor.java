@@ -27,7 +27,6 @@ import java.util.HashMap;
 public class activity_cukor extends AppCompatActivity {
     String userId;
     private ListView listView;
-    Button addButton;
     ArrayList<HashMap<String, String>> valueList;
 
     @Override
@@ -36,12 +35,10 @@ public class activity_cukor extends AppCompatActivity {
         setContentView(R.layout.activity_cukor);
         init();
 
+
         valueList = new ArrayList<>();
         listView = findViewById(R.id.listView);
         getJSON();
-
-        addButton = this.findViewById(R.id.addButton);
-        addButton.setOnClickListener(v -> startActivity(new Intent(activity_cukor.this, activity_post_vercukor.class)));
     }
 
     private void getJSON() {
