@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         Button adatok = findViewById(R.id.adatok);
         Button vercukor = findViewById(R.id.vercukor);
         Button receptek = findViewById(R.id.receptek);
+        Button ujVercukor = findViewById(R.id.vercukorPost);
 
         PrefManager prefManager = PrefManager.getInstance(MainActivity.this);
 
@@ -36,12 +37,14 @@ public class MainActivity extends AppCompatActivity {
             adatok.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, activity_phisicalDatas.class)));
             vercukor.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, activity_cukor.class)));
             receptek.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, hu.adombence.cukorbeteg.recept.activity_recept.class)));
+            ujVercukor.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, activity_post_vercukor.class)));
         } else {
             profile.setVisibility(View.GONE);
             foodlal.setVisibility(View.GONE);
             adatok.setVisibility(View.GONE);
             vercukor.setVisibility(View.GONE);
             receptek.setVisibility(View.GONE);
+            ujVercukor.setVisibility(View.GONE);
             login.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, activity_login.class)));
             sign_up.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, activity_signup.class)));
         }
