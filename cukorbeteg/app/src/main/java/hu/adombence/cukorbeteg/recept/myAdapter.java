@@ -47,7 +47,11 @@ public class myAdapter extends RecyclerView.Adapter<FoodViewHolder> {
         holder.mCardView.setOnClickListener(view -> {
             Intent intent = new Intent(mContext, DetailActivity.class);
             intent.putExtra("Image", myFoodList.get(holder.getAdapterPosition()).getItemImage());
+            intent.putExtra("Name", myFoodList.get(holder.getAdapterPosition()).getItemName());
+            intent.putExtra("Ingredients", myFoodList.get(holder.getAdapterPosition()).getItemIngredients());
             intent.putExtra("Description", myFoodList.get(holder.getAdapterPosition()).getItemDescription());
+            intent.putExtra("Energy", myFoodList.get(holder.getAdapterPosition()).getItemEnergy());
+            intent.putExtra("Carbohydrate", myFoodList.get(holder.getAdapterPosition()).getItemCarbohydrate());
             mContext.startActivity(intent);
         });
     }
@@ -72,6 +76,6 @@ class FoodViewHolder extends RecyclerView.ViewHolder {
         mDescription = itemView.findViewById(R.id.tvDescription);
         mPrice = itemView.findViewById(R.id.tvPrice);
 
-        mCardView = itemView.findViewById(R.id.myCardView);
+        mCardView = itemView.findViewById(R.id.myCardView_martasok);
     }
 }
