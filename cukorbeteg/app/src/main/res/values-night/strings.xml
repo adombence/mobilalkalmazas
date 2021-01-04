@@ -52,4 +52,12 @@
     <string name="kal_ria">Kalória</string>
     <string name="szenhidrat">Szénhidrát</string>
     <string name="tkez_s">Étkezés</string>
+    <string name="j_v_rcukor_rt_k">Új vércukor érték</string>
+    <string name="adatok">adatok</string>
+    <string name="receptek">receptek</string>
+    <string name="v_rcukor">vércukor</string>
+    <string name="f_oldal">Főoldal</string>
+    <string name="signup">SignUp</string>
+    <string name="login">LogIn</string>
+    <string name="profile">Profile</string>
 </resources>
