@@ -18,7 +18,7 @@
         tools:ignore="RtlSymmetry" />
 
     <RadioGroup
-        android:id="@+id/rg_nem"
+        android:id="@+id/rg_etkezesek"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
@@ -54,14 +54,14 @@
         tools:ignore="RtlSymmetry" />
 
     <EditText
-        android:id="@+id/etKor"
+        android:id="@+id/etErtek"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="25dp"
         android:layout_marginRight="10dp"
         android:ems="10"
-        android:inputType="numberDecimal"
+        android:inputType="number"
         android:paddingStart="10dp"
         android:autofillHints=""
         tools:ignore="LabelFor,RtlSymmetry" />
@@ -78,7 +78,7 @@
         tools:ignore="RtlSymmetry" />
 
     <EditText
-        android:id="@+id/et_suly"
+        android:id="@+id/et_kaloria"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
@@ -92,7 +92,6 @@
         tools:ignore="LabelFor" />
 
     <TextView
-        android:id="@+id/textViewHeight"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
@@ -104,7 +103,7 @@
         tools:ignore="RtlSymmetry" />
 
     <EditText
-        android:id="@+id/et_magassag"
+        android:id="@+id/et_szenhidrat"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
