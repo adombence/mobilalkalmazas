@@ -4,22 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingTop="20dp"
     tools:context=".MainActivity">
 
     <Button
         android:id="@+id/btnProfile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp"
-        android:text="Profile" />
+        android:text="@string/profile" />
 
     <Button
         android:id="@+id/btn_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/btnProfile"
-        android:text="LogIn" />
+        android:text="@string/login" />
 
     <Button
         android:id="@+id/btn_sign_up"
@@ -27,7 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/btn_login"
         android:layout_marginTop="20dp"
-        android:text="SignUp" />
+        android:text="@string/signup" />
 
     <Button
         android:id="@+id/fooldal"
@@ -35,7 +35,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/btn_sign_up"
         android:layout_marginTop="20dp"
-        android:text="Főoldal" />
+        android:text="@string/f_oldal" />
 
     <Button
         android:id="@+id/vercukor"
@@ -43,15 +43,23 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/fooldal"
         android:layout_marginTop="20dp"
-        android:text="vércukor" />
+        android:text="@string/v_rcukor" />
+
+    <Button
+        android:id="@+id/vercukorPost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vercukor"
+        android:layout_marginTop="20dp"
+        android:text="@string/j_v_rcukor_rt_k" />
 
     <Button
         android:id="@+id/adatok"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/vercukor"
+        android:layout_below="@+id/vercukorPost"
         android:layout_marginTop="20dp"
-        android:text="adatok" />
+        android:text="@string/adatok" />
 
     <Button
         android:id="@+id/receptek"
@@ -59,7 +67,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/adatok"
         android:layout_marginTop="20dp"
-        android:text="receptek" />
+        android:text="@string/receptek" />
 
 
 </RelativeLayout>
