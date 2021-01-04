@@ -10,7 +10,7 @@ import hu.adombence.cukorbeteg.R;
 
 public class DetailActivity extends AppCompatActivity {
 
-    TextView foodDescription;
+    TextView foodName, foodIngredients, foodDescription, foodEnergy, foodCarbohydrate;
     ImageView foodImage;
 
 
@@ -19,14 +19,24 @@ public class DetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
 
-        foodDescription = this.findViewById(R.id.txtDescription);
         foodImage = this.findViewById(R.id.ivImage2);
+
+        foodName = this.findViewById(R.id.tvName);
+        foodDescription = this.findViewById(R.id.txtDescription);
+        foodIngredients = this.findViewById(R.id.tvIngredients);
+        foodEnergy = this.findViewById(R.id.tvEnergy);
+        foodCarbohydrate = this.findViewById(R.id.tvCarbohydrate);
+
 
         Bundle mBundle = getIntent().getExtras();
 
-        if(mBundle != null){
+        if (mBundle != null) {
 
+            foodName.setText(mBundle.getString("Name"));
+            foodIngredients.setText("Hozzávalók: \n" + mBundle.getString("Ingredients"));
             foodDescription.setText(mBundle.getString("Description"));
+            foodEnergy.setText("Energia: \n" + mBundle.getString("Energy") + " kcal");
+            foodCarbohydrate.setText("Szénhidrát: \n" + mBundle.getString("Carbohydrate") + " g");
             foodImage.setImageResource(mBundle.getInt("Image"));
 
         }
