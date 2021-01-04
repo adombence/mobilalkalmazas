@@ -38,4 +38,21 @@
     <string name="mertekegyseg_kg"> kg</string>
     <string name="kivanatosatlag">Kivánatos átlag:</string>
     <string name="szelsoertek">Szélső értékek:</string>
+    <string name="letoltes">letöltés</string>
+    <string name="recept_levesek">levesek</string>
+    <string name="t_szt_k_s_tem_nyek">Tészták, sütemények</string>
+    <string name="kis_tkez_sek">Kisétkezések</string>
+    <string name="m_rt_sok">Mártások</string>
+    <string name="h_sok_h_sp_tl_k">Húsok, húspótlók</string>
+    <string name="f_zel_kek">Főzelékek</string>
+    <string name="sal_t_k">Saláták</string>
+    <string name="k_retek">Köretek</string>
+    <string name="egyt_l_telek">Egytálételek</string>
+    <string name="ujertek">Új érték hozzá adása</string>
+    <string name="ev_s_el_tt">Evés előtt</string>
+    <string name="evesutan">Evés után</string>
+    <string name="ertek">Érték (mmol/l)</string>
+    <string name="kal_ria">Kalória</string>
+    <string name="szenhidrat">Szénhidrát</string>
+    <string name="tkez_s">Étkezés</string>
 </resources>
