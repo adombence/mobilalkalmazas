@@ -2,15 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d93c60c-f26c-419a-956d-dbfebe51dc08" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../cukorbeteg/app/src/main/java/hu/adombence/cukorbeteg/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../cukorbeteg/app/src/main/java/hu/adombence/cukorbeteg/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cukorbeteg/app/src/main/java/hu/adombence/cukorbeteg/activity_cukor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../cukorbeteg/app/src/main/java/hu/adombence/cukorbeteg/activity_cukor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cukorbeteg/app/src/main/java/hu/adombence/cukorbeteg/activity_post_vercukor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../cukorbeteg/app/src/main/java/hu/adombence/cukorbeteg/activity_post_vercukor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cukorbeteg/app/src/main/res/layout/activity_cukor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cukorbeteg/app/src/main/res/layout/activity_cukor.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cukorbeteg/app/src/main/res/layout/activity_post_vercukor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cukorbeteg/app/src/main/res/layout/activity_post_vercukor.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cukorbeteg/app/src/main/res/values-night/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cukorbeteg/app/src/main/res/values-night/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cukorbeteg/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cukorbeteg/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/details.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/cover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/Chart.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/linechart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/md5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/post_values.php" beforeDir="false" afterPath="$PROJECT_DIR$/post_values.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +21,15 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -33,12 +44,23 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\adomb\OneDrive\Dokumentumok\GitHub\mobilalkalmazas\serverside\js" />
+      <recent name="C:\Users\adomb\OneDrive\Dokumentumok\GitHub\mobilalkalmazas\serverside" />
+      <recent name="C:\Users\adomb\OneDrive\Dokumentumok\GitHub\mobilalkalmazas\serverside\images" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -57,6 +79,8 @@
       <workItem from="1609686799974" duration="825000" />
       <workItem from="1609688787119" duration="2640000" />
       <workItem from="1609770454495" duration="3148000" />
+      <workItem from="1609845764107" duration="24399000" />
+      <workItem from="1609934626439" duration="3091000" />
     </task>
     <servers />
   </component>
