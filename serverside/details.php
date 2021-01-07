@@ -52,7 +52,7 @@ $result = $conn->query($sugarDatas) or die($conn->error);
         <table>
             <tr>
                 <th>érték</th>
-                <th>dátum</th>
+                <th>időpont</th>
                 <th>étkezés</th>
                 <th>energia</th>
                 <th>szénhidrát</th>
@@ -70,8 +70,8 @@ $result = $conn->query($sugarDatas) or die($conn->error);
                     <td><?php echo $rows['value'] ?></td>
                     <td><?php echo $rows['date'] ?></td>
                     <td><?php echo $etketzes ?></td>
-                    <td><?php echo $rows['energy'] ?></td>
-                    <td><?php echo $rows['carbohydrate'] ?></td>
+                    <td><?php echo $rows['energy'] ?> kcal</td>
+                    <td><?php echo $rows['carbohydrate'] ?> g</td>
                     <script>
                         tempval.push(<?php echo $rows['value'] ?>);
                         tempdat.push("<?php echo $rows['date'] ?>");
