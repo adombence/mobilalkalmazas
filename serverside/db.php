@@ -1,8 +1,8 @@
 <?php
-$host = "mysql.omega:3306";   //Host
-$username = "cukorbeteg";    //User
-$password = "Q2BfC4Udu97RMZg"; //Passsword
-$database = "cukorbeteg";     // Database Name
+$host = "";   //Host
+$username = "";    //User
+$password = ""; //Passsword
+$database = "";     // Database Name
 
 /* creating a new connection object using mysqli */
 $conn = new mysqli($host, $username, $password, $database);
